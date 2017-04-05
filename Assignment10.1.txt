@@ -1,0 +1,26 @@
+1.Explain in brief the need of hive.
+HiveQL is like SQL based querying language.
+Those who are weak at programming instead of writing complex mapreduce programs ,
+they can do the same with hive easily.
+100s of lines of complex code in mapreduce can be written in just 4 lines of hiveQL.
+It is automatically converted to mapreduce jobs by the execution engine.
+Since it follows SQL based queries it is easy to understand and code.
+
+2.Is Hive suitable to be used for OLTP systems? Explain in brief.
+No, Hive is not suitable for OLTP(Online Transaction Processing) workloads as it does not provide insert or update 
+operations at row level.
+
+3.What is a metastore in Hive?
+The hive metastore is a service that stores the metadata of hive tables, partitions, Hive databases etc in a relational 
+database and provides the clients to access this information via metastore service API.
+It acts like a central repository of hive metadata.
+
+4.Can we run unix shell commands from hive? Give 5 examples and share the
+screenshot.
+Yes we can run unix shell commands from hive, we should just add the prefix ! to the unix command to execute it in hive.
+Check the attached screenshots.
+
+5.Hive can process any type of data formats? Explain in brief.
+Hive by default handles only structured data and stores the data in the derby database.
+Hive can process many file formats such as Text file,sequence file,RC file,ORC file.
+Hive has inbuilt input and output formats in its packages to read these types of files.
